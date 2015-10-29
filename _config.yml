@@ -8,5 +8,15 @@ url: "http://oriiiii.com" # the base hostname & protocol for your site
 author: Huy Pham
 twitter_username: envyInside
 github_username: f-ma
-# Build settings
+
+# Plugins
+
+# Conversion
 markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# Markdown Processors
+kramdown:
+  input: GFM
