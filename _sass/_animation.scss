@@ -1,0 +1,74 @@
+@mixin transition($type, $time, $delay) {
+  -webkit-transition: $type $time ease-in-out $delay;
+  -moz-transition: $type $time ease-in-out $delay;
+  -ms-transition: $type $time ease-in-out $delay;
+  transition: $type $time ease-in-out $delay;
+}
+
+/** Landing **/
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($name, $time, $iteration-count, $fillMode, $delay, $timing-function) {
+  -webkit-animation: $name $time $iteration-count;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-fill-mode: $fillMode;
+  -webkit-animation-timing-function: $timing-function;
+  -moz-animation: $name $time $iteration-count;
+  -moz-animation-fill-mode: $fillMode;
+  -moz-animation-delay: $delay;
+  -moz-animation-timing-function: $timing-function;
+  -ms-animation: $name $time $iteration-count;
+  -ms-animation-fill-mode: $fillMode;
+  -ms-animation-delay: $delay;
+  -ms-animation-timing-function: $timing-function;
+  animation: $name $time $iteration-count;
+  animation-fill-mode: $fillMode;
+  animation-delay: $delay;
+  animation-timing-function: $timing-function;
+}
+
+#or_geom {
+  .hide {
+    opacity: 0;
+  }
+  &:hover {
+    .hide {
+      opacity: 1;
+    }
+  }
+}
+
+#or_o, #or_r, #or_i {
+  path, circle, rect {
+    @include transition(opacity, .2s, 0s);
+    cursor: pointer;
+    &:active {
+      opacity: 0 !important;
+    }
+    &:hover {
+      opacity: 0;
+    }
+    &.fast {
+      @include transition(opacity, .2s, 0s);
+    }
+    &.medium {
+      @include transition(opacity, .2s, .1s);
+    }
+    &.slow {
+      @include transition(opacity, .2s, .2s);
+    }
+  }
+}

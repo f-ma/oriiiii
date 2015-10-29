@@ -1,0 +1,18 @@
+@media (max-width: 800px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (max-width: 640px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (max-width: 320px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  #landing-graph {
+    transform: rotateZ(90deg);
+  }
+}
