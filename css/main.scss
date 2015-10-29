@@ -12,6 +12,7 @@
 
 .landing-page {
   height: 100%;
+  min-height: 480px;
 }
 
 #landing {
@@ -19,7 +20,6 @@
     color: $landing-link-color;
     text-decoration: none;
     opacity: .6;
-    @include transition(opacity, .2s, 0s);
     &:hover {
       text-decoration: none;
       opacity: 1;
@@ -53,10 +53,11 @@
       justify-content: space-between;
       font-size: 1.2em;
       min-width: 450px;
-      margin-left: 1.2em;
+      margin-left: 45px;
     }
   }
   .separator {
+    margin-top: 15px;
     width: 60%;
     min-width: 800px;
     display: none;
