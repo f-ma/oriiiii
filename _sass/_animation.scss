@@ -51,26 +51,20 @@
 }
 
 #reeds {
-  -webkit-transform-origin: 480px 480px;
-  transform-origin: 480px 480px;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
   @include animation(WINDY, 10s, infinite, none, 0s, ease);
 }
 
-#reeds-older-brother-dark {
-  -webkit-transform-origin: 650px 480px;
-  transform-origin: 650px 480px;
-  @include animation(WINDY, 5s, infinite, none, 0s, ease);
-}
-
 #reeds-brother-dark {
-  -webkit-transform-origin: 380px 690px;
-  transform-origin: 380px 690px;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
   @include animation(WINDY, 15s, infinite, none, 0s, ease);
 }
 
 #reeds-older-brother-dark {
-  -webkit-transform-origin: 650px 480px;
-  transform-origin: 650px 480px;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
   @include animation(WINDY, 20s, infinite, none, 0s, ease);
 }
 
