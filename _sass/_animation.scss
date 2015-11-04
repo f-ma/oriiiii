@@ -75,8 +75,38 @@
 }
 
 #reed_head {
+  cursor: pointer;
+  path {
+    @include transition(opacity, .2s, 0s);
+    &:hover {
+      transition: none;
+      transition-delay: 0s !important;
+      opacity: 1 !important;
+    }
+    &:active {
+      transition-delay: 0s !important;
+      opacity: .3 !important;
+    }
+  }
+  path.fast {
+    transition-delay: .1s;
+  }
+  path.x-medium {
+    transition-delay: .2s;
+  }
+  path.medium {
+    transition-delay: .3s;
+  }
+  path.x-slow {
+    transition-delay: .4s;
+  }
+  path.slow {
+    transition-delay: .5s;
+  }
   &:hover {
-    opacity: .3;
+    path {
+      opacity: .3;
+    }
   }
 }
 
