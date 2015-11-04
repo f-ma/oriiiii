@@ -21,6 +21,16 @@
   }
 }
 
+@include keyframes(WINDY) {
+  0% {transform: rotateZ(0deg);};
+  30% {transform: rotateZ(3deg);}
+  50% {transform: rotateZ(6deg);}
+  60% {transform: rotateZ(4deg);}
+  75% {transform: rotateZ(6deg);}
+
+  100% {transform: rotateZ(0deg);}
+}
+
 @mixin animation($name, $time, $iteration-count, $fillMode, $delay, $timing-function) {
   -webkit-animation: $name $time $iteration-count;
   -webkit-animation-delay: $delay;
@@ -38,6 +48,36 @@
   animation-fill-mode: $fillMode;
   animation-delay: $delay;
   animation-timing-function: $timing-function;
+}
+
+#reeds {
+  -webkit-transform-origin: 480px 480px;
+  transform-origin: 480px 480px;
+  @include animation(WINDY, 10s, infinite, none, 0s, ease);
+}
+
+#reeds-older-brother-dark {
+  -webkit-transform-origin: 650px 480px;
+  transform-origin: 650px 480px;
+  @include animation(WINDY, 5s, infinite, none, 0s, ease);
+}
+
+#reeds-brother-dark {
+  -webkit-transform-origin: 380px 690px;
+  transform-origin: 380px 690px;
+  @include animation(WINDY, 15s, infinite, none, 0s, ease);
+}
+
+#reeds-older-brother-dark {
+  -webkit-transform-origin: 650px 480px;
+  transform-origin: 650px 480px;
+  @include animation(WINDY, 20s, infinite, none, 0s, ease);
+}
+
+#reed_head {
+  &:hover {
+    opacity: .3;
+  }
 }
 
 #or_geom {
