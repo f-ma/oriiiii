@@ -3,15 +3,22 @@
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: $typo-base-size;
   font-weight: 400;
   color: $typo-color;
 }
 
-code, pre {
-  font-family: Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
+.mono-classic {
+  font-family: 'Courier New', monospace;
+}
 
+.mono-robo {
+  font-family: 'Roboto Mono', monospace;
+}
+
+code, pre {
+  font-family: "Courier New", monospace;
 }
 
 .bold {

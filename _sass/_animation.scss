@@ -31,6 +31,12 @@
   100% {transform: rotateZ(0deg);}
 }
 
+@include keyframes(FADE_FADE) {
+  0% {opacity: 1;}
+  50% {opacity: .4;}
+  100% {opacity: 1;}
+};
+
 @mixin animation($name, $time, $iteration-count, $fillMode, $delay, $timing-function) {
   -webkit-animation: $name $time $iteration-count;
   -webkit-animation-delay: $delay;
@@ -48,6 +54,12 @@
   animation-fill-mode: $fillMode;
   animation-delay: $delay;
   animation-timing-function: $timing-function;
+}
+
+#under-make-up {
+  .hey {
+    @include animation(FADE_FADE, 5s, infinite, none, 0s, ease);
+  }
 }
 
 #reeds {

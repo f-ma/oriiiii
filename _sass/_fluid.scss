@@ -1,11 +1,36 @@
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .hidden-md {
     display: none !important;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 780px) {
   .hidden-sm {
     display: none !important;
+  }
+  #landing {
+    > .decoration {
+      background-color: rgba(0,0,0,.5) !important;
+      svg {
+        opacity: .5
+      }
+    }
+    > .content {
+      > .decoration {
+        -webkit-flex-flow: column nowrap !important;
+        flex-flow: column nowrap !important;
+        -webkit-align-items: center !important;
+        align-items: center !important;
+      }
+      top: 5%;
+      nav {
+        -webkit-flex-flow: column nowrap !important;
+        flex-flow: column nowrap !important;
+        & > section {
+          -webkit-flex-flow: column nowrap !important;
+          flex-flow: column nowrap !important;
+        }
+      }
+    }
   }
 }
 @media (max-width: 320px) {
@@ -13,6 +38,6 @@
     display: none !important;
   }
   #landing-graph {
-    transform: rotateZ(90deg);
+
   }
 }
