@@ -1,11 +1,47 @@
-@media (max-width: 860px) {
+@media (max-width: $medium-media-width) {
   .hidden-md {
     display: none !important;
+  }
+  .default-page {
+    background-color: #f2f2f2 !important;
+  }
+  #default {
+    > .content-container {
+      -webkit-flex-flow: column nowrap !important;
+      flex-flow: column nowrap !important;
+      > .decoration {
+        width: 100% !important;
+        &.whi {
+          background-color: #6e1d6b !important;
+        }
+        &.wh {
+          background-color: #333 !important;
+        }
+        .dock {
+          margin: -40px auto 5% auto !important;
+        }
+        border-bottom: none !important;
+      }
+      > .content {
+        width: 100% !important;
+        padding: 5% !important;
+      }
+    }
+    > .footer-message {
+      .nav-container {
+        box-shadow: 0 4px 8px rgba(0,0,0,.2);
+      }
+    }
   }
 }
 @media (max-width: 780px) {
   .hidden-sm {
     display: none !important;
+  }
+  #default {
+    header.main-top {
+
+    }
   }
   #landing {
     > .decoration {

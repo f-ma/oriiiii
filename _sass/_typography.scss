@@ -8,6 +8,32 @@ body {
   font-weight: 400;
   color: $typo-color;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: .5em 0 .2em 0;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: .5em 0;
+}
+h2 {
+  font-size: 30px;
+
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
 
 .mono-classic {
   font-family: 'Courier New', monospace;
@@ -17,10 +43,27 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+.fw-medium {
+  font-weight: 500;
+}
+
 code, pre {
   font-family: "Courier New", monospace;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.signature {
+  margin-top: 2.5em;
+}
+
+.logo-tiny-dark {
+  font-size: 18px;
+  .logo {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+  }
 }

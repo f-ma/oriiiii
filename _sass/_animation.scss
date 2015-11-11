@@ -31,10 +31,34 @@
   100% {transform: rotateZ(0deg);}
 }
 
+@include keyframes(FLICKER) {
+  0% {opacity: 1; fill: #ffffff}
+  25% {opacity: 1; fill: yellow}
+
+  100% {opacity: 1; fill: #ffffff}
+};
+
+@include keyframes(RUNGRINK) {
+  0% {transform: rotateZ(0deg);};
+  30% {transform: rotateZ(3deg);}
+  50% {transform: rotateZ(6deg);}
+  60% {transform: rotateZ(4deg);}
+  75% {transform: rotateZ(6deg);}
+
+  100% {transform: rotateZ(0deg);}
+}
+
+
 @include keyframes(FADE_FADE) {
   0% {opacity: 1;}
   50% {opacity: .4;}
   100% {opacity: 1;}
+};
+
+@include keyframes(RO) {
+  0% {transform: rotateZ(0deg)}
+  50% {transform: rotateZ(360deg)}
+  100% {transform: rotateZ(0deg)}
 };
 
 @mixin animation($name, $time, $iteration-count, $fillMode, $delay, $timing-function) {
@@ -54,6 +78,23 @@
   animation-fill-mode: $fillMode;
   animation-delay: $delay;
   animation-timing-function: $timing-function;
+}
+
+#night-me-on-flower-flower {
+  -webkit-transform-origin: 487px 652px;
+  transform-origin: 487px 652px;
+  @include transition(transform, 0.4s, 0s);
+  cursor: pointer;
+  &:hover {
+    path {
+      @include animation(FLICKER, 5s, infinite, none, 0s, ease);
+    }
+  }
+  &:active {
+    -webkit-transform: rotateZ(3deg);
+    transform: rotateZ(3deg);
+  }
+
 }
 
 #under-make-up {
