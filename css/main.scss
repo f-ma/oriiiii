@@ -238,16 +238,28 @@
     @include transition(background-color, .2s, 0s);
     svg {
       position: absolute;
-      bottom: -2px;
-      right: 20%;
-      width: 30%;
-      min-width: 300px;
+      bottom: -5px;
+      right: 10%;
+      -webkit-transition: height .2s ease-in-out, width .2s ease-in-out;
+      transition: height .2s ease-in-out, width .2s ease-in-out;
     }
     #reeds-older-brother-dark {
       width: 40%;
+      width: $landing-reeds-older-brother-dark-origin-width / 1.3;
+      height: $landing-reeds-older-brother-dark-origin-height / 1.3;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
     }
     #reeds-brother-dark {
       width: 25%;
+      width: $landing-reeds-brother-dark-origin-width / 1.2;
+      height: $landing-reeds-brother-dark-origin-height / 1.2;
+      -webkit-transition-delay: .3s;
+      transition-delay: .3s;
+    }
+    #reeds {
+      width: $landing-reeds-origin-width / 1.3;
+      height: $landing-reeds-origin-height / 1.3;
     }
   }
   .content {
