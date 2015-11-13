@@ -9,7 +9,7 @@
   <meta property="og:url" content="http://www.oriiiii.com" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Oriiiii" />
-  <meta property="og:title" content="{% if page.title %}{{ page.og-title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.og-title %}{{ page.og-title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="http://www.oriiiii.com/logo-og.png" />
 
