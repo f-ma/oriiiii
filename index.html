@@ -12,29 +12,18 @@ layout: landing
 <section class="content">
   <div id="landing-graph" class="title decoration">
     {% include_relative /assets/svg/logo-landing.svg %}
-    <p class="literal mono-classic bold">
-      <span>{!and}</span>
-    </p>
   </div>
-  <section class="subtitle mono-robo quiet">
-    <p>
-/**
- * Khó lắm, vào đây chơi chứ đừng học
- * @return creative mind
- */
-    </p>
-  </section>
-  <nav class="mono-robo">
-    <section class="policy hidden-sm">
+  <nav class="navigator-container">
+    <section class="category">
+      <a class="tu disable-text" href='{{ "/tu/" | prepend: site.baseurl }}'>&lt;tậptọe /&gt;</a>
+      <a class="to disable-text" href='{{ "/to/" | prepend: site.baseurl }}'>Ngàyhômnayyyyy.</a>
+      <a class="whi" href='{{ "/whi/" | prepend: site.baseurl }}'>Làààààgì.</a>
+      <a class="wh" href='{{ "/wh/" | prepend: site.baseurl }}'>Làmmmmmgì.</a>
+    </section>
+    <section class="policy">
       <a href='{{ "/th/" | prepend: site.baseurl }}' class="disable-text">Cảm ơn</a>
       <a href='{{ "/pr/" | prepend: site.baseurl }}' class="disable-text">Bảo mật</a>
       <a href='{{ "/li/" | prepend: site.baseurl }}' class="disable-text">Điều khoản </a>
-    </section>
-    <section class="">
-      <a href='{{ "/tu/" | prepend: site.baseurl }}' class="disable-text">&lt;tậptọe /&gt;</a>
-      <a href='{{ "/to/" | prepend: site.baseurl }}' class="disable-text">Ngàyhômnayyyyy.</a>
-      <a href='{{ "/whi/" | prepend: site.baseurl }}'>Làààààgì.</a>
-      <a href='{{ "/wh/" | prepend: site.baseurl }}'>Làmmmmmgì.</a>
     </section>
   </nav>
 </section>
