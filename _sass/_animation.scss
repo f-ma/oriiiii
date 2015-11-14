@@ -21,6 +21,12 @@
   }
 }
 
+@include keyframes(WINDY_LANTERN) {
+  0% {transform: rotateZ(30deg);};
+  50% {transform: rotateZ(-30deg);};
+  100% {transform: rotateZ(30deg);}
+}
+
 @include keyframes(WINDY) {
   0% {transform: rotateZ(0deg);};
   30% {transform: rotateZ(3deg);}
@@ -78,6 +84,13 @@
   animation-fill-mode: $fillMode;
   animation-delay: $delay;
   animation-timing-function: $timing-function;
+}
+
+#stroller-lantern {
+  -webkit-transform-origin: 704px 715px;
+  transform-origin: 704px 715px;
+  cursor: pointer;
+  @include animation(WINDY_LANTERN, 5s, infinite, none, 0s, ease);
 }
 
 #night-me-on-flower-flower {
