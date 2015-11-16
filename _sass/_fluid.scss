@@ -20,6 +20,103 @@
       }
     }
   }
+  #tutorials {
+    .the-grid {
+      .elf {
+        > .wrapper {
+          -webkit-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+          -webkit-align-items: center;
+          align-items: center;
+          .group {
+            width: 635px;
+            margin-top: 30px;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+          }
+        }
+        .item {
+          &.horizontal-big {
+            margin-right: 0 !important;
+          }
+        }
+      }
+      .pure-css {
+        > .wrapper {
+          -webkit-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+          -webkit-align-items: center;
+          align-items: center;
+          .group {
+            width: 635px;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            .horizontal-multi {
+              margin-right: 0;
+            }
+          }
+        }
+        .item {
+          &.horizontal-medium {
+            width: 302.5px;
+            height: 187px;
+            margin-bottom: 30px;
+          }
+          &.vertical-big {
+            width: 635px;
+            height: 1027px;
+          }
+        }
+      }
+      .hard {
+        > .wrapper {
+          .main {
+            width: auto;
+            &.main-top {
+              -webkit-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+              -webkit-align-items: center;
+              align-items: center;
+              .group {
+                margin-right: 0;
+                margin-bottom: 30px;
+                .horizontal-multi {
+                  height: 561px;
+                }
+              }
+            }
+            &.main-bottom {
+              margin-top: 0;
+              -webkit-justify-content: center;
+              justify-content: center;
+            }
+          }
+        }
+        .item {
+          &.vertical-big {
+            width: 347px;
+            height: 561px;
+          }
+          &.horizontal-small {
+            width: 258px;
+            height: 159px;
+          }
+          &.horizontal-gigantic {
+            width: 635px;
+            height: 392px;
+          }
+        }
+      }
+      .basic {
+        .item {
+          &.horizontal-medium {
+            width: 192px;
+            height: 118px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $medium-media-width) {
@@ -59,6 +156,7 @@
       }
     }
   }
+
   #landing {
     #reeds {
       width: $landing-reeds-origin-width / 1.5 !important;
@@ -74,7 +172,7 @@
     }
   }
 }
-@media (max-width: 780px) {
+@media (max-width: $small-media-width) {
   .hidden-sm {
     display: none !important;
   }
@@ -83,6 +181,103 @@
 
     }
   }
+
+  #tutorials {
+    header.main-top.tu {
+      section {
+        &.categories-container {
+          .categories {
+            .item {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .the-grid {
+      .elf {
+        > .wrapper {
+          .group {
+            width: 450px;
+            .horizontal-multi {
+              width: 227px;
+              height: 312px;
+            }
+          }
+        }
+        .item {
+          &.horizontal-big {
+            width: 450px;
+            height: 278px;
+          }
+          &.vertical-medium {
+            width: 193px;
+            height: 312px;
+          }
+          &.horizontal-small {
+            width: 227px;
+            height: 140px;
+          }
+        }
+      }
+      .pure-css {
+        > .wrapper {
+          .group {
+            width: 450px;
+          }
+        }
+        .item {
+          &.horizontal-medium {
+            width: 210px;
+            height: 130px;
+          }
+          &.vertical-big {
+            width: 450px;
+            height: 728px;
+          }
+        }
+      }
+      .hard {
+        > .wrapper {
+          .main {
+            &.main-top {
+              .group {
+                .horizontal-multi {
+                  height: 404px;
+                }
+              }
+            }
+            &.main-bottom {
+
+            }
+          }
+        }
+        .item {
+          &.vertical-big {
+            width: 250px;
+            height: 404px;
+          }
+          &.horizontal-small {
+            width: 170px;
+            height: 105px;
+          }
+          &.horizontal-gigantic {
+            width: 450px;
+            height: 278px;
+          }
+        }
+      }
+      .basic {
+        .item {
+          &.horizontal-medium {
+            width: 210px;
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+
   #landing {
     > .decoration {
     }

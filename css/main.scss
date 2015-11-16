@@ -5,7 +5,6 @@
 
 @import "init";
 @import "base";
-@import "fluid";
 @import "typography";
 @import "highlighter";
 @import "animation";
@@ -27,6 +26,10 @@
   margin: auto;
   min-height: 100%;
   border: solid 3px #222222;
+}
+
+.tutorial-page {
+  min-width: 480px;
 }
 
 #default {
@@ -335,3 +338,237 @@
     }
   }
 }
+
+#tutorials {
+  header.main-top.tu {
+    position: relative;
+    height: 300px;
+    border-bottom: solid 8px #222;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    section {
+      margin-bottom: -30px;
+      &.logo {
+        display:block;
+        width: 120px;
+        height: 120px;
+        border: solid 8px #222;
+      }
+      &.categories-container {
+        .super-category {
+          margin-bottom: 5px;
+          .title {
+            margin: 0;
+          }
+        }
+        .categories {
+          display: -webkit-flex;
+          display: flex;
+          .item {
+            margin: 0 20px 0 0;
+            padding: 15px 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+          }
+        }
+      }
+      &.black-board {
+        .board {
+          width: 400px;
+          height: 247px;
+          background-color: white;
+          border: solid 8px #222;
+        }
+      }
+    }
+  }
+
+  .the-grid {
+    margin-top: 150px;
+    .item {
+      -webkit-flex-shrink: 0;
+      flex-shrink: 0;
+      -webkit-flex-grow: 0;
+      flex-grow: 0;
+    }
+    .elf {
+      width: 100%;
+      margin: auto;
+      > .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+        .group {
+          display: flex;
+          .horizontal-multi {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            background-color: transparent;
+            width: 290px;
+            height: 390px;
+          }
+        }
+      }
+      .item {
+        height: 390px;
+
+        &.horizontal-big {
+          background-color: transparent;
+          width: 635px;
+          margin-right: 30px;
+          > .wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            img {
+              position: absolute;
+              width: 100%;
+              bottom:0px
+            }
+          }
+        }
+        &.vertical-medium {
+          border: solid 8px #222;
+          background-color: transparent;
+          width: 242px;
+          margin-right: 30px;
+        }
+        &.horizontal-small {
+          border: solid 8px #222;
+          width:100%;
+          height: 180px;
+        }
+      }
+    }
+    .pure-css {
+      margin-top: 30px;
+      > .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: stretch;
+        align-items: stretch;
+        .group {
+          display: -webkit-flex;
+          display: flex;
+          .horizontal-multi {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            margin-right: 30px;
+          }
+        }
+      }
+      .item {
+        &.horizontal-medium {
+          border: solid 8px #222;
+          width: 389px;
+          height: 240.794px;
+        }
+        &.vertical-big {
+          border: solid 8px #222;
+          width: 389px;
+          height: 513.224px;
+        }
+      }
+    }
+    .hard {
+      margin-top: 30px;
+      > .wrapper {
+        .main {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          width: 1227px;
+          margin: auto;
+          &.main-top {
+            .group {
+              display: -webkit-flex;
+              display: flex;
+              margin-right: 30px;
+              .horizontal-multi {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+                height: 623px;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+              }
+            }
+          }
+          &.main-bottom {
+            margin-top: -8px;
+          }
+        }
+      }
+      .item {
+        &.vertical-big {
+          width:390px;
+          height: 623px;
+          border: solid 8px #222;
+          margin-right: 30px;
+        }
+        &.horizontal-small {
+          border: solid 8px #222;
+          width: 290px;
+          height: 179px;
+        }
+        &.vertical-big-part {
+          border: solid 8px #222;
+          border-bottom: none;
+          width:486px;
+          height: 661px;
+          background-color: white;
+          z-index: 1;
+        }
+        &.horizontal-gigantic {
+          width: 1227px;
+          height: 767px;
+          border: solid 8px #222;
+        }
+      }
+    }
+    .basic {
+      margin-top: 30px;
+      > .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+      .item {
+        &.horizontal-medium {
+          width: 389px;
+          height: 240px;
+          margin-right: 30px;
+          border: solid 8px #222;
+          &.last {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "fluid";
