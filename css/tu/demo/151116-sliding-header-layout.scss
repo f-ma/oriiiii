@@ -21,6 +21,10 @@ a, a:link {
   color: inherit;
 }
 
+.disable-text {
+  text-decoration: line-through !important;
+}
+
 #demonstration {
   position: relative;
   background-color: #222222;
