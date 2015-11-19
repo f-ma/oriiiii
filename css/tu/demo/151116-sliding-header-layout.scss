@@ -1,0 +1,136 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-width: 480px;
+}
+
+a, a:link {
+  color: inherit;
+}
+
+#demonstration {
+  position: relative;
+  background-color: #222222;
+}
+
+.sliding-header {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  -webkit-transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+  transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+  color: #eeeeee;
+  background-color: inherit;
+  box-shadow: 1px 0 16px rgba(0,0,0,.8);
+  z-index: 1;
+  .decoration {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/img/tutorial/demo/151116-sliding-header-layout/header-background.jpg');
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    cursor: pointer;
+    -webkit-transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+    transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+  }
+  .gradient {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.9) , rgba(0,0,0,0));
+    cursor: pointer;
+    -webkit-transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+    transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
+  }
+  .content {
+    cursor: pointer;
+  }
+}
+
+.hidden-content {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 70%;
+  padding: 15px;
+  background: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .row {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    .item {
+      width: 24%;
+      margin-bottom: 15px;
+      -webkit-flex-grow: 0;
+      flex-grow: 0;
+      overflow: hidden;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 100%;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+        transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+        opacity: .8;
+      }
+      &:hover {
+        img {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+#checkbox-one {
+  display: none;
+  &:checked {
+    & + .sliding-header {
+      top: -70%;
+      .decoration, .gradient {
+        opacity: .2;
+      }
+      & + * {
+
+      }
+    }
+  }
+}

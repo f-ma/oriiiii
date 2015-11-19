@@ -209,6 +209,16 @@
           &.horizontal-big {
             width: 450px;
             height: 278px;
+            > .wrapper {
+              > .decoration {
+                img {
+                  width: 196px;
+                }
+              }
+              > .literal {
+                width: 200px;
+              }
+            }
           }
           &.vertical-medium {
             width: 193px;
