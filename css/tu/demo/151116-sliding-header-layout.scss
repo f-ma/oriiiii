@@ -47,6 +47,7 @@ a, a:link {
     background-color: #222222;
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 110%;
     cursor: pointer;
     -webkit-transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
     transition: all .8s cubic-bezier(0.72, 0.01, 0.58, 1);
@@ -131,6 +132,14 @@ a, a:link {
       & + * {
 
       }
+    }
+  }
+}
+@media (max-width: 1280px) {
+
+  .sliding-header {
+    .decoration {
+      background-size: auto;
     }
   }
 }
