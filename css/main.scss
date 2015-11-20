@@ -436,6 +436,7 @@
         -webkit-justify-content: center;
         justify-content: center;
         .group {
+          display: -webkit-flex;
           display: flex;
           .horizontal-multi {
             display: -webkit-flex;

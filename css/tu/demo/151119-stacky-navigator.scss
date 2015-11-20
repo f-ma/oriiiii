@@ -1,0 +1,256 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+#demonstration {
+  overflow: hidden;
+}
+
+.quiet {
+  opacity: .6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 30px 0;
+}
+h4 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-style: italic;
+}
+h3 {
+  font-size: 24px;
+  margin: 30px 0 5px 0;
+}
+p {
+  margin: 5px 0;
+}
+
+.disable-text {
+  text-decoration: line-through !important;
+}
+
+.hidden-must {
+  display: none !important;
+}
+
+.navigator-container {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 0%;
+  box-shadow: 1px -1px 2px rgba(0,0,0,.1);
+
+  -webkit-transition: height .4s cubic-bezier(0.72, 0.01, 0.58, 1), width .4s cubic-bezier(0.72, 0.01, 0.58, 1), bottom .4s cubic-bezier(0.72, 0.01, 0.58, 1);
+  transition: height .4s cubic-bezier(0.72, 0.01, 0.58, 1) width .4s cubic-bezier(0.72, 0.01, 0.58, 1), bottom .4s cubic-bezier(0.72, 0.01, 0.58, 1);
+
+  .navigator-stacky {
+    width: 100%;
+    height: 100%;
+    background-color: #42071c;
+    position: relative;
+
+    > * {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    > .decoration {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      -webkit-align-items: flex-end;
+      align-items: flex-end;
+    }
+    > .content {
+      > .wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 5% 5% 0 10%;
+      }
+    }
+  }
+
+  &.one {
+    z-index: 3;
+  }
+
+  &.two {
+    z-index: 2;
+    -webkit-transition-delay: .05s;
+    transition-delay: .05s;
+  }
+
+  &.three {
+    z-index: 1;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+  }
+
+  &.activated, &.standby {
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+#navigator-stacky-one {
+  > .decoration {
+    svg {
+      width: 25%;
+      margin-right: 10%;
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 70%;
+    }
+  }
+}
+
+#navigator-stacky-two {
+  > .decoration {
+    svg {
+      width: 25%;
+      margin-right: 10%;
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 70%;
+    }
+  }
+}
+
+#navigator-stacky-three {
+  > .decoration {
+    svg {
+      width: 80%;
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 80%;
+    }
+  }
+}
+
+#navigator-stacky-four {
+  > .decoration {
+    svg {
+      width: 60%;
+      margin-bottom: 5%;
+      margin-right: 5%;
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 80%;
+    }
+  }
+}
+
+#navigator-stacky-five {
+  > .decoration {
+    svg {
+      width: 25%;
+      margin-right: 10%;
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 70%;
+    }
+  }
+}
+
+#navigator-stacky-six {
+  > .decoration {
+    -webkit-justify-content: center;
+    justify-content: center;
+    .part {
+      position: absolute;
+      bottom: 0;
+      svg {
+        width: 100%;
+      }
+      &.mans {
+        left: 0;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        width: 50%;
+      }
+      &.boat {
+        right: 0;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        width: 32%;
+      }
+    }
+  }
+  > .content {
+    > .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+#main-container.activated {
+  .navigator-container {
+    &.ready {
+      cursor: pointer;
+      &.one {
+        width: 85%;
+        height: 30%;
+        bottom: 0px;
+      }
+      &.two {
+        width: 80%;
+        height: 33%;
+        bottom: 0px;
+      }
+      &.three {
+        width: 75%;
+        height: 36%;
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .navigator-stacky {
+    > .content {
+      > .wrapper {
+        width: 100% !important;
+        padding: 90px 5% 0 5% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px !important;
+  }
+}

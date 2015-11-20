@@ -1,0 +1,120 @@
+---
+layout: tutorial-demo
+title: Hiệu ứng chuyển hướng chồng trang - Xem thử - The Or!
+og-title: Hiệu ứng chuyển hướng chồng trang - Xem thử - The Or!
+permalink: /tu/pur/dem/hieu-ung-chuyen-huong-chong-trang-151119
+css-href: /css/tu/demo/151119-stacky-navigator.css
+date: 2015-11-19 0:00:00
+timeToRead: 15
+description: >
+  Hiển thị các phần tử chuyển hướng theo cách xếp chồng lên nhau, tạo hiệu ứng chiều sâu cho thị giác.
+og-description: >
+  Hiển thị các phần tử chuyển hướng theo cách xếp chồng lên nhau, tạo hiệu ứng chiều sâu cho thị giác.
+categories: tu pur dem
+tags: hiệu-ứng chuyển-hướng bố-cục pure-css nghịch-ngợm
+---
+
+<section id="main-container" class="main-container" style="width: 100%; height: 100%; background-color: #E2DDD9;">
+
+  <div id="navigator-container-one" class="navigator-container one ready standby" data-next="navigator-container-two">
+    <section id="navigator-stacky-one" class="navigator-stacky" style="background-color: #F8F1E9; color: #666;">
+      <div class="decoration">
+        {% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-01-tree.svg %}
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>#khôngphảimộtmình</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Họ, người này, người kia luôn tìm được một lý do, một câu nói đủ hay, đủ vần, để có lẽ, tạm thời chấp nhận
+          điều gì đó. Ngay cả sự cơ đơn cũng được người ta ca ngợi. Nhưng với tôi thì không. Nó không ứng nghiệm
+          với tôi, hầu hết... Chính xác là tôi chẳng chịu được sự cô đơn."</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="navigator-container-two" class="navigator-container two ready" data-next="navigator-container-three">
+    <section id="navigator-stacky-two" class="navigator-stacky" style="background-color: #D8C8B8; color: #4d4d4d;">
+      <div class="decoration">
+        {% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-03-hands.svg %}
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>#cụccằn</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Ngay lúc này, chính ngay lúc này tôi đang muốn sang tát cho cô mẹ thằng cu hàng xóm 2n + 1,
+rồi tất cả nhân với n phát (với n vô cùng lớn)..."</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="navigator-container-three" class="navigator-container three ready" data-next="navigator-container-four">
+    <section id="navigator-stacky-three" class="navigator-stacky" style="background-color: #A8A39D; color: #F8F1E9;">
+      <div class="decoration">
+        {% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-04-light.svg %}
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>#ánhsángtrắng</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Thích ánh sáng của bóng đèn sợi đốt... ấm, tập trung."</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="navigator-container-four" class="navigator-container ready" data-next="navigator-container-five">
+    <section id="navigator-stacky-four" class="navigator-stacky" style="background-color: #8D7966; color: white;">
+      <div class="decoration">
+        {% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-06-papers.svg %}
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>@giấy</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Về cơ bản không thích giấy. Vì chẳng khi nào có nút <strong>Undo</strong>."</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="navigator-container-five" class="navigator-container ready" data-next="navigator-container-six">
+    <section id="navigator-stacky-five" class="navigator-stacky" style="background-color: #8A171E; color: white;">
+      <div class="decoration">
+        {% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-05-pencils.svg %}
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>#trênmây</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Thích xuyên cái gì đó vào mây. Cái gì xuyên được cũng xuyên."</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="navigator-container-six" class="navigator-container ready" data-next="navigator-container-one">
+    <section id="navigator-stacky-six" class="navigator-stacky" style="background-color: #1a1a1a; color: white;">
+      <div class="decoration">
+        <div class="part mans">{% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-02-mans.svg %}</div>
+        <div class="part boat">{% include_relative /svg/tutorial/demo/151119-stacky-navigator/tree-02-boat.svg %}</div>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h1><strong>#ngượcgió</strong></h1>
+          <h4 class="quiet">Tôi ở đây</h4>
+          <p>"Xuôi là làm theo bầy đàn - tức là làm đúng - như những gì đã được nghe. Làm ngược lại tức là làm sai.
+            Cảm thấy cái ngược khi làm đúng, làm sai thì lại thấy xuôi. Cái quái gì!?"</p>
+          <h3 class="disable-text">trở về bài viết hướng dẫn</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section style="position: absolute; top: 15px; left: 15px; width: 50px; height: 50px; z-index: 10;">
+  <button id="main-toggle" style="display: block; border: none; color: white; width:100%; height: 100%; background-color: red; cursor: pointer; font-weight: bold;">!</button>
+</section>
+
+<script src="/js/tu/demo/151119-stacky-navigator.js"></script>
