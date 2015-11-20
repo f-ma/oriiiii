@@ -58,7 +58,7 @@ p {
   height: 0%;
   box-shadow: 1px -1px 2px rgba(0,0,0,.1);
 
-  -webkit-transition: height .4s -webkit-cubic-bezier(0.72, 0.01, 0.58, 1), width .4s -webkit-cubic-bezier(0.72, 0.01, 0.58, 1), bottom .4s -webkit-cubic-bezier(0.72, 0.01, 0.58, 1);
+  -webkit-transition: height .4s ease-in-out, width .4s ease-in-out, bottom .4s ease-in-out;
   transition: height .4s cubic-bezier(0.72, 0.01, 0.58, 1), width .4s cubic-bezier(0.72, 0.01, 0.58, 1), bottom .4s cubic-bezier(0.72, 0.01, 0.58, 1);
 
   .navigator-stacky {
