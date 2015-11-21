@@ -343,7 +343,7 @@
 #tutorials {
   header.main-top.tu {
     position: relative;
-    height: 300px;
+    height: 150px;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: flex-end;
@@ -505,8 +505,7 @@
           width:100%;
           height: 180px;
           color: white;
-          padding: 2px 17px;;
-          border: solid 8px #ffffff;
+          padding: 10px 17px;;
           p {
             margin: 5px 0 10px 0;
           }
@@ -547,10 +546,71 @@
         &.horizontal-medium {
           width: 389px;
           height: 240.794px;
+          > .wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+          }
+          p {
+            margin: 0;
+          }
+          .short-description {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+
+            margin: 10px 0;
+            .decoration {
+              width: 50%;
+              img {
+                width: 100%;
+              }
+            }
+            .literal {
+              width: 45%;
+              margin-left: 5%;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              p {
+                margin-bottom: 5px;
+              }
+            }
+          }
         }
         &.vertical-big {
           width: 389px;
           height: 513.224px;
+          .decoration {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin-top: -15px;
+            img {
+              width: 105%;
+            }
+          }
+          .literal {
+            padding: 5% 10%;
+            p {
+              margin: 10px 0;
+            }
+          }
         }
       }
     }
