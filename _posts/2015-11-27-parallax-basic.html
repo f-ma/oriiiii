@@ -1,0 +1,205 @@
+---
+layout: tutorial-demo
+title: Parallax cơ bản - Loạt bài hiệu ứng Parallax - Xem thử - The Or!
+og-title: Xem hiệu ứng Parallax cơ bản - Xem thử - The Or!
+permalink: /tu/pur/dem/hieu-ung-parallax-co-ban-151127
+css-href: /css/tu/demo/151127-parallax-basic.css
+date: 2015-11-27 0:00:00
+timeToRead: 15
+description: >
+  Hướng dẫn làm website Parallax đơn giản trong loạt bài về hiệu ứng Parallax, hiển thị các phần tử theo cách xếp chồng lên nhau, với tỷ lệ lớn nhỏ trước sau, tạo hiệu ứng chiều sâu cho thị giác.
+og-description: >
+  Hướng dẫn làm website Parallax đơn giản trong loạt bài về hiệu ứng Parallax, hiển thị các phần tử theo cách xếp chồng lên nhau, với tỷ lệ lớn nhỏ trước sau, tạo hiệu ứng chiều sâu cho thị giác.
+categories: tu pur dem
+tags: hiệu-ứng parallax bố-cục pure-css nghịch-ngợm
+---
+<div class="main-container">
+  <div class="parallax">
+    <div id="hello" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back-deep">
+        <div class="wrapper hello">
+          <div class="frame__top"></div>
+          <div class="offset"></div>
+        </div>
+        <div class="wrapper shoe" style="margin-top: 250px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/shoe/frame__top--back-deep.svg'); background-size: 300px 100px; height:100px;"></div>
+          <div class="offset" style="background-color: #0b476f; margin-top: -10px;"></div>
+        </div>
+
+        <div class="wrapper country" style="margin-top: 600px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/country/frame__top--back-deep.svg'); background-size: 1366px 250px; height:250px;"></div>
+          <div class="offset" style="background-color: #cd5257;margin-top: -10px;"></div>
+        </div>
+
+        <div class="wrapper country" style="margin-top: 200px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/family/frame__top--back-deep.svg'); background-size: 1366px 300px; height:300px;"></div>
+          <div class="offset" style="background-color: #ffc732; margin-top: -10px;"></div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="wrapper hello">
+          <div class="frame__top"></div>
+          <div class="offset"></div>
+        </div>
+
+        <div class="wrapper shoe" style="margin-top: 300px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/shoe/frame__top--back.svg'); background-size: 300px 100px;"></div>
+          <div class="offset" style="background-color: #3c6c8c; margin-top: -10px;"></div>
+        </div>
+
+        <div class="wrapper country" style="margin-top: 750px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/country/frame__top--back.svg'); background-size: 1366px 250px; height: 250px;"></div>
+          <div class="offset" style="background-color: #bf4253; margin-top: -10px;"></div>
+        </div>
+
+        <div class="wrapper country" style="margin-top: 500px;">
+          <div class="frame__top" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/family/frame__top--back.svg'); background-size: 1366px 300px; height: 300px;"></div>
+          <div class="offset" style="background-color: #FF9940; margin-top: -10px;"></div>
+        </div>
+
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="wrapper hello">
+          <div class="frame__top"></div>
+          <div class="offset" style="display: -webkit-flex; display: flex; display: -webkit-flex;  -webkit-align-items: flex-end; align-items: flex-end;">
+            <div class="end" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/frame__bottom--base.svg'); background-size: 329px 100px; height: 100px;  -webkit-flex-grow: 1; flex-grow: 1; margin-bottom: -50px;"></div>
+          </div>
+        </div>
+        <div class="wrapper shoe" style="margin-top: 300px; height: 1000px;">
+          <div class="frame__top" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/shoe/frame__top--base.svg); background-size: 300px 100px; height: 100px;"></div>
+          <div class="offset" style="background-color: #29abe2; diplay: -webkit-flex; display: flex;  -webkit-align-items: flex-end; align-items: flex-end;">
+            <div class="end" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/shoe/frame__bottom--base.svg'); background-size: 1366px 250px; height: 250px; -webkit-flex-grow: 1; flex-grow: 1; margin-bottom: -140px;"></div>
+          </div>
+        </div>
+        <div class="wrapper country" style="margin-top: 450px; height: 800px;">
+          <div class="frame__top" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/country/frame__top--base.svg); background-size: 1366px 250px; height: 250px;"></div>
+          <div class="offset" style="background-color: #cd5257; diplay: -webkit-flex; display: flex;  -webkit-align-items: flex-end; align-items: flex-end;">
+            <div class="end" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/country/frame__bottom--base.svg'); background-size: 1366px 300px; height: 300px;  -webkit-flex-grow: 1; flex-grow: 1; margin-bottom: -150px;"></div>
+          </div>
+        </div>
+        <div class="wrapper family" style="margin-top: 550px; height: 1100px;">
+          <div class="frame__top" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/family/frame__top--base.svg); background-size: 1366px 300px; height: 300px;"></div>
+          <div class="offset" style="background-color: #ffc732; diplay: -webkit-flex; display: flex;  -webkit-align-items: flex-end; align-items: flex-end;">
+            <div class="end" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/family/frame__bottom--base.svg'); background-size: 1366px 400px; height: 400px;  -webkit-flex-grow: 1; flex-grow: 1; background-position-x: 50%; margin-bottom: -150px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--content-back-deep">
+        <div class="wrapper" style="diplay: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center;">
+          <header style="display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: space-around; justify-content: space-around; width: 100%;">
+            <div class="wow" style="width: 140px;">
+              <img src="/assets/img/tutorial/demo/151127-parallax-basic/wow.svg" style="width: 100%;" />
+            </div>
+            <nav>
+              <a href="#">cỡ giày</a>
+              <a href="#">quê quán</a>
+              <a href="#">gia đình</a>
+              <a href="#">sở thích</a>
+            </nav>
+          </header>
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/bricks-content-back-deep.svg'); width: 934px; height: 509px;"></div>
+        </div>
+
+        <div class="wrapper shoe" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; margin-top: 500px;">
+          <div class="background" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/shoe/rope-content-back-deep.svg); width: 1034px; height:738px;"></div>
+        </div>
+
+        <div class="wrapper country" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: flex-end; align-items: flex-end; margin-top: 600px;">
+          <div class="background" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/country/canes-content-back-deep.svg); width: 858px; height:488px; background-repeat: no-repeat;"></div>
+        </div>
+
+        <div class="wrapper family" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: flex-end; align-items: flex-end; margin-top: 850px;">
+          <div class="background" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/family/house-content-back-deep.svg); width: 842px; height:800px; background-repeat: no-repeat;"></div>
+        </div>
+
+        <div class="wrapper cloud" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; margin-top: 400px;">
+          <div class="background" style="background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/cloud/cloud-content-back-deep.svg); width: 1163px; height:484px; background-repeat: no-repeat;"></div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--content-back">
+        <div class="wrapper" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/stuffs-content-back.svg'); width: 968px; height: 325px; background-repeat: no-repeat;">
+          </div>
+        </div>
+
+        <div class="wrapper" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; margin-top: 1100px;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/shoe/shoe-content-back.svg'); width: 662px; height: 597px; background-repeat: no-repeat;">
+            <div class="content" style="color: #f2f2f2; width: 100%; text-align: right;">
+              <h1 style="color: #f2f2f2; font-size: 72px; line-height:36px; margin: 0 0 15px 0;"><strong>40.5</strong></h1>
+              <p style="margin-top: 5px;">
+                Cỡ giày tôi đi.<br />
+                Ai quan tâm chứ.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper country" style="display: -webkit-flex; display: flex; -webkit-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-align-items: center; align-items: center; margin-top: 1200px; -webkit-justify-content: flex-end; justify-content: flex-end;">
+          <div class="content" style="color: #f2f2f2; text-align: center;">
+            <h1 style="font-size: 72px; line-height:36px; margin: 0 0 15px 0;"><strong>Quê hương</strong></h1>
+            <p style="margin-top: 5px;">
+              Tôi quê ở Vĩnh Phúc, thuộc<br />
+              vùng đồng bằng sông Hồng,<br />
+              Việt Nam.
+            </p>
+          </div>
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/country/mother-content-back.svg'); width: 990px; height: 571px; background-repeat: no-repeat; -webkit-flex-shrink: 0; flex-shrink: 0;">
+          </div>
+        </div>
+
+        <div class="wrapper family" style="display: -webkit-flex; display: flex; -webkit-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-align-items: flex-end; align-items: flex-end; margin-top: 1200px; -webkit-justify-content: flex-end; justify-content: flex-end;">
+          <div class="content" style="color: #f2f2f2; text-align: left; margin-right: 100px;">
+            <h1 style="font-size: 72px; line-height:36px; margin: 0 0 15px 0;"><strong>Gia đình</strong></h1>
+            <p style="margin-top: 5px;">
+              Tôi có một em trai.<br />
+              Anh em tôi còn nhom, trong đó<br />
+              tôi gầy hơn. Cả hai cùng<br />
+              không thích mặc đồ lót...
+            </p>
+          </div>
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/family/bubbles-content-back.svg'); width: 603px; height: 636px; background-repeat: no-repeat; margin-right: 200px; -webkit-flex-shrink: 0; flex-shrink: 0;">
+          </div>
+        </div>
+
+        <div class="wrapper family" style="display: -webkit-flex; display: flex; -webkit-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-align-items: center; align-items: center; margin-top: 800px; -webkit-justify-content: center; justify-content: center;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/cloud/plane-content-back.svg'); width: 944px; height: 742px; background-repeat: no-repeat;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="parallax__layer parallax__layer--content-base">
+        <div class="wrapper" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/me.png'); width: 300px; height: 465px; background-repeat: no-repeat; background-size: 100%;">
+          </div>
+        </div>
+        <div class="wrapper shoe" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; margin-top: 1800px;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/shoe/rope-content-base.svg'); width: 1177px; height: 685px; background-repeat: no-repeat; background-size: 100%;">
+          </div>
+        </div>
+        <div class="wrapper cloud" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; margin-top: 7500px;">
+          <div class="background" style="background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/cloud/cloud-content-base.svg'); width: 694px; height: 291px; background-repeat: no-repeat; background-size: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--content">
+        <div class="wrapper" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center;">
+          <div class="content" style="color: #f2f2f2; width: 60%; ">
+            <h1 style="color: #ffd25b; font-size: 72px; line-height:36px; margin: 0 0 15px 0;"><strong>Chào!</strong></h1>
+            <p>
+              Tôi là Phạm Quang Huy.<br />Tôi là... à mà thôi, đây là<br />Sơ yếu lí lịch của tôi.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper" style="display: -webkit-flex; display: flex; -webkit-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-justify-content: flex-end; justify-content: flex-end; margin-right: 100px;; margin-top: 20300px;">
+          <div class="content" style="display: -webkit-flex; display: flex; -webkit-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; color: #f2f2f2; width: 487px; height: 294px; background-image: url(/assets/img/tutorial/demo/151127-parallax-basic/cloud/cloud-content.svg); padding-top: 40px; background-repeat: no-repeat; -webkit-flex-shrink: 0; flex-shrink: 0;">
+            <h1 style="font-size: 72px; line-height:36px; margin: 0 0 15px 0;"><strong>Sở thích</strong></h1>
+            <p>
+              Lái máy bay...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

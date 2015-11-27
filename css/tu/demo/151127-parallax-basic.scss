@@ -1,0 +1,192 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+html {
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+a, a:link {
+  color: inherit;
+  text-decoration: none;
+}
+.main-container {
+  background-color: #f2f2f2;
+}
+.parallax {
+  -webkit-perspective: 1px;
+  -moz-perspective: 1px;
+  perspective: 1px;
+  -webkit-perspective-origin-x: 100%;
+  -moz-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .parallax__group {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+  }
+  .parallax__layer {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin-x: 100%;
+    -moz-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+  }
+  header {
+    nav {
+      > * {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.parallax__layer--content-back-deep {
+  -webkit-transform: translateZ(-2px) scale(3);
+  -moz-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+}
+
+.parallax__layer--base {
+  top: 650px;
+  -webkit-transform: translateZ(-3px) scale(4);
+  -moz-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
+}
+.parallax__layer--back {
+  top: 400px;
+  -webkit-transform: translateZ(-4px) scale(5);
+  -moz-transform: translateZ(-4px) scale(5);
+  transform: translateZ(-4px) scale(5);
+}
+.parallax__layer--back-deep {
+  -webkit-transform: translateZ(-5px) scale(6);
+  -moz-transform: translateZ(-5px) scale(6);
+  transform: translateZ(-5px) scale(6);
+}
+
+#hello {
+  z-index: 1;
+  .parallax__layer--back-deep {
+    z-index: 1;
+  }
+  .parallax__layer--back {
+    z-index: 2;
+    top: 120px;
+  }
+  .parallax__layer--base {
+    z-index: 3;
+    top: 600px;
+    height: 750px;
+  }
+  .parallax__layer--content-back-deep {
+    z-index: 4;
+    top: 400px;
+  }
+  .parallax__layer--content-back {
+    z-index: 5;
+    top: 600px;
+  }
+  .parallax__layer--content-base {
+    z-index: 6;
+    top: 540px;
+  }
+  .parallax__layer--content {
+    z-index: 6;
+    top: 888px;
+  }
+  .frame__top {
+    background-color: transparent;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-y: bottom;
+  }
+  .parallax__layer--back-deep {
+    .frame__top {
+      height: 175px;
+      background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/frame__top--back-deep.svg');
+      background-size: 175px 175px;
+      background-position-x: 10%;
+    }
+  }
+  .parallax__layer--back-deep {
+    .offset {
+      background-color: #1a1a1a;
+      height: 300px;
+    }
+  }
+  .parallax__layer--back {
+    .frame__top {
+      height: 175px;
+      background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/frame__top--back.svg');
+      background-size: 175px 175px;
+      background-position-x: 5%;
+    }
+  }
+  .parallax__layer--back {
+    .offset {
+      background-color: #ffd25b;
+      height: 300px;
+    }
+  }
+  .parallax__layer--base {
+    .wrapper {
+      height: 100vh;
+      min-height: 750px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+    }
+  }
+  .parallax__layer--base {
+    .frame__top {
+      height: 175px;
+      background-image: url('/assets/img/tutorial/demo/151127-parallax-basic/hello/frame__top--base.svg');
+      background-size: 175px 175px;
+      background-position-x: 15%;
+    }
+  }
+  .parallax__layer--base {
+    .offset {
+      background-color: #999;
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+  }
+  .parallax__layer--content-back-deep {
+    -webkit-transform: translateZ(-3px) scale(4);
+    -moz-transform: translateZ(-3px) scale(4);
+    transform: translateZ(-3px) scale(4);
+  }
+  .parallax__layer--content-back {
+    -webkit-transform: translateZ(-2px) scale(3);
+    -moz-transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(3);
+  }
+  .parallax__layer--content-base {
+    -webkit-transform: translateZ(-1px) scale(2);
+    -moz-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+  .parallax__layer--content {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
